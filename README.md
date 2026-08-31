@@ -21,9 +21,7 @@ Most editable text is in `js/content.js`:
 - games
 - memories
 - reasons you love her
-- placeholder letter paragraphs
-
-Replace `[Your name here]` near the bottom of `index.html` with your name.
+- letter paragraphs
 
 To add photos, place them in `assets/images/`. The memory dialog currently uses a clearly labeled placeholder. You can replace the `.photo-placeholder` element in `index.html` with an image, or extend each memory object in `js/content.js` with an image path.
 
@@ -45,4 +43,6 @@ GitHub will provide the public website address after deployment.
 - Tap-to-reveal love notes
 - Animated opening envelope and editable letter
 - Animated flower bouquet finale
+- Transparent game marks and a pixel-art Chiikawa corner decoration
+- Full-screen chapter snapping for mobile swipes
 - Mobile navigation, responsive layouts, keyboard support, and reduced-motion support

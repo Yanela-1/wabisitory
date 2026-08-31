@@ -5,30 +5,30 @@ window.GIFT_CONTENT = {
   monthsaryDay: 1,
 
   games: [
-    { name: "Roblox", note: "Where teamwork, chaos, and questionable decisions somehow bring us closer." },
-    { name: "Mobile Legends", note: "Testing both our skills and the strength of our relationship, one match at a time." },
-    { name: "WePlay", note: "Honorable mention for providing additional chaos." }
+    { name: "Roblox", note: "To more obbys, two-player tycoons, horror games, and survival games together hehehe." },
+    { name: "Mobile Legends", note: "Kahit gaano pa tayo magalit, I still enjoy playing this game with you." },
+    { name: "WePlay", note: "Nag lalaro tayo neto kahit magkatabi sa bahay. Nakakamiss mang-troll and kumanta with you." }
   ],
 
   memories: [
-    { title: "Downstairs Karaoke", text: "Singing karaoke downstairs together, whether or not the neighbors were prepared for our performance." },
-    { title: "Late-Night Walks", text: "Walking outside late at night to buy food and snacks, turning a simple errand into one of my favorite little adventures." },
-    { title: "Bridgetowne Hangouts", text: "Spending time together in Bridgetowne, with no complicated plan needed as long as you were there." },
-    { title: "Your Cooking", text: "You cooking food for me when I went there and secretly made my way into your room. A risky operation with excellent food rewards." },
+    { title: "Downstairs Karaoke", text: "Hala birit, dagdagan mo pa ng shot. I miss karaoke with you, baby." },
+    { title: "Late-Night Walks", text: "Pahangin sa labas, buy food and gummies, then eat them when we get home while watching a movie." },
+    { title: "Bridgetowne Hangouts", text: "Bridgetowne kahit walang pera, maglakad kahit saan, at umupo sa damuhan. Namimiss ko tuloy :(" },
+    { title: "Your Cooking", text: "Pinagluto mo ako ng Pancit Canton, itlog, at iba pang frozen food nung pinuslit mo ako diyan. Super sweet talaga ni Wabi." },
     { title: "SM East Ortigas", text: "Hanging out at SM East Ortigas even when we had almost no money left, simply sitting together and talking. Somehow, that was already enough." },
-    { title: "Buses to Pasig", text: "Taking buses to Pasig together and making the commute feel less tiring just by being beside each other." },
-    { title: "Dali Food Runs", text: "Going to Dali and choosing food for us to share, as if every snack run were an important mission." },
-    { title: "Random Commutes", text: "Those random commutes on the way home, when nothing special was planned but being together made the trip memorable." },
-    { title: "Doom Scrolling Upstairs", text: "Sitting upstairs and doom scrolling side by side. Not productive, perhaps, but very comfortable." },
-    { title: "Dinner at Home", text: "Eating dinner with you at home and bringing you food. Quiet moments like these make me feel closest to you." },
-    { title: "Palengke Trips", text: "Going to the palengke together and turning another normal trip into part of our story." },
+    { title: "Buses to Pasig", text: "The commute back to Pasig never felt tiring just by being beside each other." },
+    { title: "Dali Food Runs", text: "Going to Dali nang gabi para bumili ng food, na para bang bagong kasal." },
+    { title: "Random Commutes", text: "Those random commutes on the way home, tinuturuan pa kita kung paano mag-commute papunta sa amin hehe." },
+    { title: "Doom Scrolling Upstairs", text: "Scroll lang sa TikTok sa taas kasi walang magawa. Back then I thought it was boring and unproductive, but looking back at it, I wish I could relive those moments with you." },
+    { title: "Dinner at Home", text: "Hay nako, ako pa talaga magsasandok ng kanin ni Wabi, tapos hindi naman mauubos." },
+    { title: "Palengke Trips", text: "My first time going sa palengke to buy ingredients and food became special because it was spent with you :D" },
     { title: "That Beautiful Morning", text: "The morning of our last meeting before you returned to Camarines Norte. You looked so beautiful, and all I wanted was to cuddle you and hold you the entire day." }
   ],
 
   reasons: [
-    "The tender way you look at me.",
+    "The way you look at me oh so dearly.",
     "How you comfort me when you notice that a situation has made me uncomfortable.",
-    "How you are willing to keep your distance from people who make me uneasy.",
+    "How you are willing to keep your distance from people who make me feel uneasy.",
     "You never make me feel as though seeing or meeting me is something you would rather avoid.",
     "I feel safe knowing you would not approach or entertain somebody else.",
     "You do not get mad when I ask if I can play for a while.",
@@ -38,10 +38,11 @@ window.GIFT_CONTENT = {
     "Your cuteness fits perfectly with your sense of humor."
   ],
 
-  // Replace these placeholder paragraphs with your full letter later.
   letter: [
-    "This is where my full monthsary letter will go. I want these words to feel honest, personal, and worthy of everything we have shared.",
-    "For now, let this little digital garden remind you that every ordinary day with you becomes a memory I want to keep.",
-    "Thank you for being my comfort, my favorite person to spend time with, and the reason I keep looking forward to every first day of the month."
+    "Today marks our eight months together. I'm sorry I haven't given you any handmade gifts yet, but I want to make it up to you by giving you this. You are my favorite and comfort person, and you never fail to make me smile or laugh with your corny jokes.",
+    "Thank you for everything you do to make me feel safe and happy. I always appreciate every effort you give, and I feel it all down to my spirit without fail. I'm sorry for the fights we have had since we got back together. I swear I will do better as your partner and do my best to make you happy.",
+    "I'm really excited about what awaits us sa future. I hope we get to spend more time together and magawa yung mga gusto natin. I really miss you so much, and sana lagi na lang kitang nakikita. Hinding-hindi ako magsasawa sa'yo, at mahal na mahal kita.",
+    "Ikaw lang para sa akin. I hope we figure out every struggle we encounter, and that we grow together and for each other. Lalo pa kitang na-miss while writing this. Kasalanan mo 'to.",
+    "I love you so much, Wabi, Wabing, Wabhie, Wabibing, Wabings, Wabingz, Bi, Bibingz, Bingbing, Bing, Bebe, Bebeng, Beng, Bebengz, Wabebe, Wabebengs, Wabebengz, Baby, Asawa."
   ]
 };

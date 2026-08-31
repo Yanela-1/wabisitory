@@ -17,10 +17,10 @@
   <main>
     <section class="screen hero" id="home" aria-labelledby="hero-title">
       <div class="hero-card pixel-panel">
-        <p class="eyebrow">A tiny garden for</p>
+        <p class="eyebrow hero-kicker">A small gift for my one and only &lt;3</p>
         <h1 id="hero-title">Wabi</h1>
         <img class="flower flower-idle" src="assets/flower/idle-breathe-preview.gif" alt="A pink pixel flower gently breathing">
-        <p class="hero-copy">A monthsary gift made from memories, small adventures, and one flower that had to travel through the internet.</p>
+        <p class="hero-copy">A tribute to our hardships, memories, small adventures, and my own way to reach you deeper through the internet.</p>
         <button class="pixel-button primary" id="startButton" type="button">Press start</button>
         <p class="tiny-copy">Best viewed slowly, preferably while thinking of me.</p>
       </div>
@@ -30,7 +30,7 @@
     <section class="chapter" id="wrapped" aria-labelledby="wrapped-title">
       <header class="section-heading">
         <p class="chapter-number">Chapter 01</p>
-        <h2 id="wrapped-title">Wabi Wrapped</h2>
+        <h2 id="wrapped-title">Wabified Wrapped</h2>
         <p>A completely serious and highly scientific report about us.</p>
       </header>
 
@@ -52,15 +52,17 @@
         <p>The ordinary moments somehow became my favorite ones.</p>
       </header>
       <div class="memory-grid" id="memoryGrid"></div>
-      <p class="memory-ending">And so much more. I probably missed a few, so please do not be mad at me. I was too busy enjoying them with you.</p>
+      <p class="memory-ending">And so much more. I probably missed a few, so please do not be mad at me. Maybe we could add more here sa future and add photos to represent them hehe.</p>
     </section>
 
-    <dialog class="memory-dialog pixel-panel" id="memoryDialog">
-      <button class="dialog-close" id="closeMemory" type="button" aria-label="Close memory">X</button>
-      <div class="photo-placeholder" aria-hidden="true"><span>Photo<br>placeholder</span></div>
-      <p class="eyebrow" id="memoryNumber"></p>
-      <h3 id="memoryTitle"></h3>
-      <p id="memoryText"></p>
+    <dialog class="memory-dialog" id="memoryDialog">
+      <div class="memory-dialog-card pixel-panel">
+        <button class="dialog-close" id="closeMemory" type="button" aria-label="Close memory">X</button>
+        <div class="photo-placeholder" aria-hidden="true"><span>Photo<br>placeholder</span></div>
+        <p class="eyebrow" id="memoryNumber"></p>
+        <h3 id="memoryTitle"></h3>
+        <p id="memoryText"></p>
+      </div>
     </dialog>
 
     <section class="chapter love-section" id="love" aria-labelledby="love-title">
@@ -92,10 +94,8 @@
       </div>
 
       <article class="letter-paper pixel-panel" id="letterPaper" hidden>
-        <p>My dearest Wabi,</p>
+        <p>Dear Wabi,</p>
         <div id="letterBody"></div>
-        <p>Always yours,</p>
-        <p class="signature">[Your name here]</p>
         <button class="pixel-button small" id="closeLetter" type="button">Fold the letter</button>
       </article>
     </section>
@@ -112,6 +112,7 @@
         <p>I may not be able to hand you flowers in person right now, so I grew these here instead. They will never wilt, and they will always be waiting for you.</p>
         <p class="final-message">Happy monthsary, Wabi.</p>
         <button class="pixel-button primary" id="replayButton" type="button">Visit our garden again</button>
+        <img class="chiikawa-corner" src="assets/decorations/chiikawa-flower.png" alt="Pixel-art Chiikawa holding a pink flower">
       </div>
     </section>
   </main>

@@ -30,34 +30,37 @@
   const stats = relationshipStats();
   const cards = [
     {
-      kicker: "Official relationship uptime",
+      kicker: "How long have we been together?",
       value: `${stats.days}`,
       title: "days together",
-      text: `${stats.months} completed month${stats.months === 1 ? "" : "s"}, and somehow you still have not uninstalled me. Our next monthsary is in ${stats.daysUntil} day${stats.daysUntil === 1 ? "" : "s"}.`
+      text: `${stats.months} completed month${stats.months === 1 ? "" : "s"}. I guess there is no other choice but to stay with me :D`
     },
     {
       kicker: "Most visited universe",
       value: "Roblox",
       title: "our favorite game",
-      text: content.games[0].note
+      text: content.games[0].note,
+      logo: "assets/games/roblox.png"
     },
     {
       kicker: "Most competitive category",
       value: "ML",
       title: "Mobile Legends",
-      text: content.games[1].note
+      text: content.games[1].note,
+      logo: "assets/games/mobile-legends.png"
     },
     {
-      kicker: "Chaotic honorable mention",
+      kicker: "Honorable Mention",
       value: "WePlay",
       title: "still on the leaderboard",
-      text: content.games[2].note
+      text: content.games[2].note,
+      logo: "assets/games/weplay.png"
     },
     {
       kicker: "Most valuable resource",
       value: "Time",
       title: "spent doing absolutely anything",
-      text: "No expensive plans required. Sitting, talking, commuting, eating, or scrolling with you still counts as a perfect date."
+      text: "Kahit umupo lang, mag-doom scroll, tumulala, o makinig sa music, I'll do it all again as long as katabi kita."
     }
   ];
 
@@ -71,6 +74,7 @@
     void wrappedCard.offsetWidth;
     wrappedCard.innerHTML = `
       <p class="eyebrow">${card.kicker}</p>
+      ${card.logo ? `<img class="game-logo" src="${card.logo}" alt="${card.value} logo">` : ""}
       <strong class="wrapped-value">${card.value}</strong>
       <h3>${card.title}</h3>
       <p>${card.text}</p>`;
@@ -110,11 +114,16 @@
     $("#memoryNumber").textContent = `Memory ${String(index + 1).padStart(2, "0")}`;
     $("#memoryTitle").textContent = memory.title;
     $("#memoryText").textContent = memory.text;
+    const savedScroll = document.querySelector("main").scrollTop;
     memoryDialog.showModal();
+    requestAnimationFrame(() => { document.querySelector("main").scrollTop = savedScroll; });
   });
   $("#closeMemory").addEventListener("click", () => memoryDialog.close());
   memoryDialog.addEventListener("click", (event) => {
-    if (event.target === memoryDialog) memoryDialog.close();
+    const card = memoryDialog.querySelector(".memory-dialog-card");
+    const rect = card.getBoundingClientRect();
+    const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+    if (outside) memoryDialog.close();
   });
 
   function renderReasons() {
@@ -154,7 +163,6 @@
     window.setTimeout(() => {
       letterPaper.hidden = false;
       letterPaper.classList.add("paper-open");
-      letterPaper.scrollIntoView({ behavior: "smooth", block: "center" });
       makePetals(10);
     }, 650);
   });
@@ -165,7 +173,6 @@
     envelope.classList.remove("opened");
     envelope.setAttribute("aria-expanded", "false");
     $("#envelopeHint").textContent = "Tap the envelope to open your letter.";
-    envelope.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 
   $("#startButton").addEventListener("click", () => {
@@ -184,7 +191,7 @@
       navLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
       if (entry.target.id === "finale") makePetals(18);
     });
-  }, { threshold: 0.35 });
+  }, { root: document.querySelector("main"), threshold: 0.55 });
   $$('main > section').forEach((section) => observer.observe(section));
 
   renderWrapped();
